@@ -12,6 +12,12 @@ namespace Tasklist.Domain.Tests
 			var user = new User();
 			Assert.IsInstanceOfType(user, typeof(User));
 			Assert.IsNotNull(user);
+
+			user.FullName = "Jhon Banana";
+			user.Email = "jhon@mail.com";
+
+			Assert.IsNotNull(user.FullName);
+			Assert.IsNotNull(user.Email);
 		}
 	}
 }
