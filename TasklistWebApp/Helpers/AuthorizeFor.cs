@@ -24,7 +24,7 @@ namespace TasklistWebApp.Helpers
 			if (userSession == null)
 			{
 				// Usuário não autenticado é redirecionado para Login
-				httpContext.Response.Redirect("../Conta/Acessar");
+				httpContext.Response.Redirect("/Conta/Acessar");
 				return false;
 			}
 

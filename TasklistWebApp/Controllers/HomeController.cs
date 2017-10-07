@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using TasklistWebApp.Helpers;
 
 namespace TasklistWebApp.Controllers
 {
-	//[Authorize]
+	[AuthorizeFor("Home", Models.AccessLevel.TasklistUser)]
 	public class HomeController : Controller
 	{
 		public ActionResult Index()
