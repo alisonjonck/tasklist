@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tasklist.Domain.Entity;
 
-namespace Tasklist.Domain.Tests
+namespace Tasklist.Domain.Tests.Entity
 {
 	[TestClass]
 	public class UserTest
