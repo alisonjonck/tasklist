@@ -50,8 +50,10 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UserTest.cs" />
+    <Compile Include="Entity\TaskTest.cs" />
+    <Compile Include="Entity\UserTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\UserTaskServiceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tasklist.Domain\Tasklist.Domain.csproj">
