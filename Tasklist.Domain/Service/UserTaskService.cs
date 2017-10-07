@@ -1,9 +1,10 @@
 ﻿using Tasklist.Domain.Entity;
 using Tasklist.Domain.Enum;
+using Tasklist.Domain.Interface;
 
 namespace Tasklist.Domain.Service
 {
-	public class UserTaskService
+	public class UserTaskService: IUserTaskService
 	{
 		public static bool AddTask(User user, Task task)
 		{

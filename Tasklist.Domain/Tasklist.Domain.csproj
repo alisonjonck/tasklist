@@ -44,12 +44,11 @@
     <Compile Include="Entity\Task.cs" />
     <Compile Include="Entity\User.cs" />
     <Compile Include="Enum\TaskStatus.cs" />
+    <Compile Include="Interface\IUserTaskService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\UserTaskService.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interface\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
