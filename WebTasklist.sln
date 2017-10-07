@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasklistWebApp", "TasklistWebApp\TasklistWebApp.csproj", "{109B029E-AC3A-45C5-924E-DED3D4E75DC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TasklistWebApp.Tests", "TasklistWebApp.Tests\TasklistWebApp.Tests.csproj", "{062620E7-5DF1-4CF1-9AF8-B4D7FCF4C2FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{109B029E-AC3A-45C5-924E-DED3D4E75DC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{109B029E-AC3A-45C5-924E-DED3D4E75DC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{109B029E-AC3A-45C5-924E-DED3D4E75DC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{109B029E-AC3A-45C5-924E-DED3D4E75DC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{062620E7-5DF1-4CF1-9AF8-B4D7FCF4C2FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{062620E7-5DF1-4CF1-9AF8-B4D7FCF4C2FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{062620E7-5DF1-4CF1-9AF8-B4D7FCF4C2FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{062620E7-5DF1-4CF1-9AF8-B4D7FCF4C2FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
