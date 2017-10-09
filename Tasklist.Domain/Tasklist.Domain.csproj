@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Entity\Task.cs" />
     <Compile Include="Entity\User.cs" />
     <Compile Include="Enum\TaskStatus.cs" />

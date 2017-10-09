@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
 namespace TasklistWebApp
 {
@@ -11,11 +8,13 @@ namespace TasklistWebApp
 		public static void RegisterBundles(BundleCollection bundles)
 		{
 			bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-				"~/Scripts/jquery-{version}.js"));
+				"~/Scripts/jquery.min.js",
+				"~/Scripts/jquery.mask.js"));
 
-			bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-				"~/Scripts/jquery.unobtrusive*",
-				"~/Scripts/jquery.validate*"));
+			bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+				"~/Scripts/angular.min.js",
+				"~/Scripts/modules/angular-ui-router.min.js",
+				"~/Scripts/modules/ocLazyLoad.min.js"));
 
 			// Use the development version of Modernizr to develop with and learn from. Then, when you're
 			// ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
@@ -23,12 +22,22 @@ namespace TasklistWebApp
 				"~/Scripts/modernizr-*"));
 
 			bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-				"~/Scripts/bootstrap.js",
-				"~/Scripts/respond.js"));
+				"~/Scripts/bootstrap.min.js",
+				"~/Scripts/respond.min.js"));
 
-			bundles.Add(new StyleBundle("~/Content/css").Include(
+			bundles.Add(new ScriptBundle("~/bundles/tasklist").Include(
+				  "~/Scripts/controllers/tasklist/home.js"));
+
+		bundles.Add(new StyleBundle("~/Content/css").Include(
 				 "~/Content/bootstrap.css",
 				 "~/Content/Site.css"));
+
+#if DEBUG
+			BundleTable.EnableOptimizations = false;
+#else
+			BundleTable.EnableOptimizations = true;
+#endif
+
 		}
 	}
 }
