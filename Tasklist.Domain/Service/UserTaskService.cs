@@ -1,6 +1,6 @@
 ﻿using Tasklist.Domain.Entity;
 using Tasklist.Domain.Enum;
-using Tasklist.Domain.Interface;
+using Tasklist.Domain.Interface.Service;
 
 namespace Tasklist.Domain.Service
 {

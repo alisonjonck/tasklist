@@ -44,7 +44,8 @@
     <Compile Include="Entity\Task.cs" />
     <Compile Include="Entity\User.cs" />
     <Compile Include="Enum\TaskStatus.cs" />
-    <Compile Include="Interface\IUserTaskService.cs" />
+    <Compile Include="Interface\Service\IUserTaskService.cs" />
+    <Compile Include="Interface\Repository\IUserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\UserTaskService.cs" />
   </ItemGroup>

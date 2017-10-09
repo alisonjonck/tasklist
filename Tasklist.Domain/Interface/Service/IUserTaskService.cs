@@ -1,4 +1,4 @@
-﻿namespace Tasklist.Domain.Interface
+﻿namespace Tasklist.Domain.Interface.Service
 {
 	public interface IUserTaskService
 	{
