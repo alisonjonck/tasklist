@@ -10,7 +10,10 @@ namespace TasklistWebApp.Helpers
 			{
 				"/Conta",
 				"/Conta/Acessar",
-				"/Home"
+				"/Home",
+				"/fazer-um-teste-agora",
+				"/acesso",
+				"/sobre-nos"
 			};
 
 			rotas.AddCrud("Tarefa");
