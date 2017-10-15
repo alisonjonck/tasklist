@@ -2,11 +2,11 @@
 
 	"use strict"
 
-	tasklistApp.factory('AuthHttpResponseInterceptor', AuthHttpResponseInterceptor);
+	//tasklistApp.factory('AuthHttpResponseInterceptor', AuthHttpResponseInterceptor);
 
-	tasklistApp.run(function (timerCheckoutFactory, $interval, $rootScope, $state) {
-		timerCheckoutFactory.startTimer();
-	});
+	//tasklistApp.run(function (timerCheckoutFactory, $interval, $rootScope, $state) {
+	//	timerCheckoutFactory.startTimer();
+	//});
 
 	tasklistApp
 		.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', '$httpProvider', '$compileProvider', function ($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider, $compileProvider) {
@@ -25,6 +25,6 @@
 			});
 
 			// Erros
-			$httpProvider.interceptors.push('AuthHttpResponseInterceptor');
+			//$httpProvider.interceptors.push('AuthHttpResponseInterceptor');
 		}]);
 })();
