@@ -31,7 +31,7 @@ namespace TasklistWebApp.Helpers
 			var foundGETURL = false;
 			foreach (var gR in GETMethodRoutes.ToList())
 			{
-				if (gR.Equals(cleanUri))
+				if (gR.ToUpper().Equals(cleanUri.ToUpper()))
 				{
 					foundGETURL = true;
 					break;
@@ -41,7 +41,7 @@ namespace TasklistWebApp.Helpers
 
 			for (int i = 0; i < RoutesCount; i++)
 			{
-				if (cleanUri.Equals(AngularRoutes[i]))
+				if (cleanUri.ToUpper().Equals(AngularRoutes[i].ToUpper()))
 				{
 					return true;
 				}
