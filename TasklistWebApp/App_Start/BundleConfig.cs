@@ -11,11 +11,6 @@ namespace TasklistWebApp
 				"~/Scripts/jquery.min.js",
 				"~/Scripts/jquery.mask.js"));
 
-			bundles.Add(new ScriptBundle("~/bundles/angular").Include(
-				"~/Scripts/angular.min.js",
-				"~/Scripts/modules/angular-ui-router.min.js",
-				"~/Scripts/modules/ocLazyLoad.min.js"));
-
 			// Use the development version of Modernizr to develop with and learn from. Then, when you're
 			// ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
 			bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
@@ -26,11 +21,13 @@ namespace TasklistWebApp
 				"~/Scripts/respond.min.js"));
 
 			bundles.Add(new ScriptBundle("~/bundles/tasklist").Include(
-				  "~/Scripts/controllers/tasklist/home.js"));
+				"~/Scripts/app.js",
+				"~/Scripts/config.js",
+				"~/Scripts/controllers/tasklist/home.js"));
 
-		bundles.Add(new StyleBundle("~/Content/css").Include(
-				 "~/Content/bootstrap.css",
-				 "~/Content/Site.css"));
+			bundles.Add(new StyleBundle("~/Content/css").Include(
+				"~/Content/bootstrap.css",
+				"~/Content/Site.css"));
 
 #if DEBUG
 			BundleTable.EnableOptimizations = false;
